@@ -53,8 +53,7 @@ Query
 
 
 
-select tweet_id
-from 
-Tweets 
-where 
-Length(content)>=17;
+SELECT tweet_id
+FROM Tweets
+WHERE CHAR_LENGTH(content) > 15;
+
